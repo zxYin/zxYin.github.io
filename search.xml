@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[Logistic Regression（Version 0.1.01]]></title>
+      <title><![CDATA[Logistic Regression（Version 0.1.0]]></title>
       <url>/2017/11/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B/</url>
       <content type="html"><![CDATA[<p>先用一个<strong>超棒的</strong> 各种机器学习任务的顶级结果（论文） 汇总 Github项目占坑  - - 从 <strong>机器之心</strong> 上发现的<br>附上链接 <a href="https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems" target="_blank" rel="external">https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems</a></p>
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script><br>Logistic Regression（下文简写为LR） 又称逻辑回归，是一种线性回归，非常适合进行二分类，可以说 <strong>LR是一个相对来说很简单的神经网络</strong></p>
