@@ -47,7 +47,7 @@
 <ul>
 <li><strong>输出层</strong>(Output Layer)：一共一个神经元，其中包括了一个<strong>激活函数</strong>(Activation Function)，若是用于进行二分类的话，输出的结果维数为(1, m），结果分为1和0两种(即True和False)</li>
 </ul>
-<h2 id="正向传播-和-反向传播"><a href="#正向传播-和-反向传播" class="headerlink" title="正向传播 和 反向传播"></a>正向传播 和 反向传播</h2><h3 id="正向传播-Forward-Propagation"><a href="#正向传播-Forward-Propagation" class="headerlink" title="正向传播(Forward Propagation)"></a>正向传播(Forward Propagation)</h3><p>训练数据读入后，将会通过 w 和 b 进行加权变化，再通过激活函数（LR 二分类一般用 Sigmoid 函数作为激活函数）把结果一一映射到（0, 1）区间内，其中w的维数为(nx, 1)，b的维数为（1, 1）<em>// Sigmoid 函数的图像就是上图那个像 S 的图像</em><br>Sigmoid函数的定义为：<br>$$sigmoid(w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}\tag{1}$$<br>用 Python 实现：</p>
+<h2 id="正向传播-和-反向传播"><a href="#正向传播-和-反向传播" class="headerlink" title="正向传播 和 反向传播"></a>正向传播 和 反向传播</h2><h3 id="正向传播-Forward-Propagation"><a href="#正向传播-Forward-Propagation" class="headerlink" title="正向传播(Forward Propagation)"></a>正向传播(Forward Propagation)</h3><p>训练数据读入后，将会通过 w 和 b 进行加权变化，再通过激活函数（LR 二分类一般用 Sigmoid 函数作为激活函数）把结果一一映射到（0, 1）区间内，其中w的维数为(nx, 1)，b的维数为（1, 1）<em>// Sigmoid 函数的图像就是上图那个像 S 的图像</em><br>Sigmoid函数的定义为：(若公式显示有误，请查看<a href="https://zxyin.github.io/notice/solution_for_formula.html/">解决办法</a>)<br>$$sigmoid(w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}\tag{1}$$<br>用 Python 实现：</p>
 <pre><code>def sigmoid(z):
     &quot;&quot;&quot;
     Compute the sigmoid of z
