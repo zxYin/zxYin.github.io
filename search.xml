@@ -3,8 +3,24 @@
   
     
     <entry>
+      <title><![CDATA[公式显示错误 解决方法']]></title>
+      <url>/notice/solution_for_formula.html</url>
+      <content type="html"><![CDATA[<p>由于内置的公式脚本不支持 https 协议，导致 Chrome 等浏览器显示为不安全脚本，解决方法如下</p>
+<p><div align="center"><br>    <img src="http://oz7lylx2b.bkt.clouddn.com/WX20171111-155948@2x.png"><br></div><br>点击右上角的小盾牌，点击 <strong>加载不安全的脚本</strong> 即可。&lt;== 它真的是安全的</p>
+]]></content>
+      
+        <categories>
+            
+            <category> notice </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[浅层神经网络]]></title>
-      <url>/2017/11/11/%E6%B5%85%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
+      <url>/Andrew-Ng%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/shallow_neural_network.html</url>
       <content type="html"><![CDATA[<p>先用一个<strong>超棒的</strong> 各种机器学习任务的顶级结果（论文） 汇总 Github项目占坑  - - 从 <strong>机器之心</strong> 上发现的<br>附上链接 <a href="https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems" target="_blank" rel="external">https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems</a></p>
 ]]></content>
       
@@ -19,7 +35,7 @@
     
     <entry>
       <title><![CDATA[Logistic Regression]]></title>
-      <url>/2017/11/09/Logistic%20Regression/</url>
+      <url>/Andrew-Ng%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/logistic_regression.html</url>
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Logistic Regression（下文简写为 LR）又称逻辑回归，是一种线性回归，非常适合进行二分类。可以说 <strong>LR 是一个相对来说很简单的神经网络</strong></p>
 <div align="center"><br>    <img src="http://oz7lylx2b.bkt.clouddn.com/LogReg_kiank.png" style="width:650px;height:400px;"><br></div>
 
@@ -190,7 +206,7 @@
     
     <entry>
       <title><![CDATA[Hello World-第一篇博客]]></title>
-      <url>/2017/11/09/Hello%20World/</url>
+      <url>/uncategorized/hello_world.html</url>
       <content type="html"><![CDATA[<p>从今天开始，我将把文章发表在自己的博客上。因为我觉得这个环境比起别的平台更加的安静，更适合想一些东西、写一些东西。在这有一种无拘无束的感觉，自己就是这个小世界的主人~</p>
 <h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>这是“坑”与“填坑”的历史库<br>为自己总结<br>写的时候会查更多的东西，扩大知识面<br>督促自己学习</p>
 <h2 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h2><p>尽量多写，即使东西很简单、很小<br>尽量固定频率写，加强学习<br>这是给自己看的，不为别的，只为自己总结<br>别人提的建议虚心接受</p>
