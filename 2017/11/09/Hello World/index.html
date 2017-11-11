@@ -37,7 +37,7 @@
     
     <title>
         
-            Logistic Regression（Version 0.1.0 | 
+            Hello World-第一篇博客 | 
         
         殷子欣&#39;s Blog
     </title>
@@ -236,18 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://zxyin.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Logistic Regression（Version 0.1.0 | 殷子欣&#39;s Blog">
+    <meta property="og:title" content="Hello World-第一篇博客 | 殷子欣&#39;s Blog">
     <meta property="og:image" content="https://zxyin.github.io/img/favicon.png" />
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Thu Nov 09 2017 18:48:37 GMT+0800" />
-        <meta property="article:modified_time" content="Sat Nov 11 2017 14:06:18 GMT+0800" />
+        <meta property="article:published_time" content="Thu Nov 09 2017 18:25:31 GMT+0800" />
+        <meta property="article:modified_time" content="Thu Nov 09 2017 18:41:16 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Logistic Regression（Version 0.1.0 | 殷子欣&#39;s Blog">
+    <meta name="twitter:title" content="Hello World-第一篇博客 | 殷子欣&#39;s Blog">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://zxyin.github.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -255,7 +255,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://zxyin.github.io/2017/11/09/深度学习简介/index.html" />
+        <link rel="canonical" href="https://zxyin.github.io/2017/11/09/Hello World/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -267,10 +267,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://zxyin.github.io/2017/11/09/深度学习简介/index.html",
-    "headline": "Logistic Regression（Version 0.1.0",
-    "datePublished": "Thu Nov 09 2017 18:48:37 GMT+0800",
-    "dateModified": "Sat Nov 11 2017 14:06:18 GMT+0800",
+    "mainEntityOfPage": "https://zxyin.github.io/2017/11/09/Hello World/index.html",
+    "headline": "Hello World-第一篇博客",
+    "datePublished": "Thu Nov 09 2017 18:25:31 GMT+0800",
+    "dateModified": "Thu Nov 09 2017 18:41:16 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Yin Zixin",
@@ -354,7 +354,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#正向传播-Forward-Propagation"><span class="post-toc-number">2.</span> <span class="post-toc-text">正向传播(Forward Propagation)</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#目的"><span class="post-toc-number">1.</span> <span class="post-toc-text">目的</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原则"><span class="post-toc-number">2.</span> <span class="post-toc-text">原则</span></a></li></ol>
     </ul>
     
 
@@ -386,7 +386,7 @@
         
     
             <p class="article-headline-p">
-                Logistic Regression（Version 0.1.0
+                Hello World-第一篇博客
             </p>
         </div>
 
@@ -427,7 +427,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC3ElEQVR42u3aW04DMRAEwNz/0nAAYNM9DmSxa7+iBJwpIzGax+PjyOeBjY2NjY2NjY2NfUv2I36+OejLpz/91vUJ+ckrMWNjY2PvzX7yr//rETHjOvRranIFRczY2NjYB7CT9JN8es1ILmUWz5PTsLGxsbEDzOyy8kiwsbGxsV/Fzq/jut2TN4ZukcCwsbGxb89eKRhWxgDJt7+5l4aNjY19e/arEslfvv7T+TY2Njb2jdntky/05O2hdpAwjBwbGxt7U3aeGNryYGXQ2w6Ao+/CxsbGPobdhtUObtu2fjJ+iBpY2NjY2Aewk+Q0a+7k19emwGLkjI2Njb0pO2/czJZ1kstq/wx5gsTGxsY+gZ0s0+RtppVrSr6r/RQbGxv7NHY7ap2VMXm7vx1ILA16sbGxsf8teyWZ5UGvj3KTVFeMB7CxsbG3Y+eN+LYxNGsSJRHWMWNjY2NvzW7bQ0kQ7dJku0xZDx6wsbGxt2bnCzorRcus+MnHFU9KF2xsbOyt2W2SqJNH3O5vS5S8rMLGxsbelT1bwVlv4ucnzBpV2NjY2Oew86TStnja8cPK4k50PjY2Nvam7PV1+ZXRbz5saJtQ2NjY2OewW8ysqMgXd1Ziw8bGxj6TnQ9N8/fbhct8hJwnuaKXho2Njf3P2XlBkqeuhDErhFZaV9jY2Ni7sq8DXWnrtAuUSftpNnjAxsbGPoHdDlzz5BQt04wWOusSBRsbG/tgdnspSVpaJ9WpFxsbG/sAdn5ckjZ+oznVDjOwsbGxT2C3T9LEmX06bPrPmkrY2NjYG7HbxNBeyrteY2NjY5/GTjD5z7epZT3tvWA8gI2Njb0Fe7ZGk49mZ02itpGEjY2NjT0rJ/JR8SyBJaXOkwE2NjY2NnY8jm1LmjzV5ZeCjY2NfSY7Ty3tRayMadtFnzqBYWNjY2/Bni01zlLX9TvJNeXxY2NjY5/APufBxsbGxsbGxsbGvs3zCaApaDrKjFwVAAAAAElFTkSuQmCC">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACXklEQVR42u3aQXLDIAwF0Nz/0u0BOqRfEsZO5nmVcWPMywLUj14/X3298PDw8PDw8PDwHsZ7xdffp1Z3Vn9Nxvw7TnlueHh4eEd4/yy1i++sXrCaXDLC+58pmRseHh7eSd5qQpNXJgt9vtlET+Hh4eF9CO89u1pw4+Hh4X03rxciRMUxHh4e3uN5kxI5OpoKYDdnLXh4eHgxL1/Kz38+er6Hh4eHF/DKLU0DdrIl5NvMckw8PDy8i3n5QpwHEL0YdzIfPDw8vPO8ZmAaPHUmIMbDw8M7z6ve6b0+AbwfOSrT8fDw8C7mVRfunJqM0Psp8fDw8O7l9Q7AknA2KbJ7kUQ5xsXDw8Pbyqu+ch409MKOwlaEh4eHd4TXi2hzcL4N5G9cFt94eHh4F/N6rU69JTv/CTan1Hh4eHiXnRBVmwnyjSSPgCftXHh4eHhneL3AtBrsJuNXi/hy0xUeHh7eJt685M0bpyZhxKikxsPDw9vKq7Y95VPfu/TnZToeHh7e1bxe0TxpouqV2oXjNzw8PLyLeduOnVpLfHWLiu7g4eHhHeTlkUR+HNW7P9ls8PDw8E7yes0BeQCRB7V5vIuHh4d3L6+6HE8m9P5zfgC2IaXGw8PDK/Kq1zxW2NUOi4eHh3cXr3c8Pw8aJiFyuekKDw8P7wJedRK9DWPyVOGbeHh4eAd5vX/+90YYky0KDw8P7/m8PGytBhnVgBgPDw/vU3i7GguqLQLNMAIPDw/vAl41qM23jXwjycMIPDw8vHt5eQSQT6JXRlcbXvHw8PDO877vwsPDw8PDw8PDe8D1C2Z4xHBQ1LDiAAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -449,7 +449,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Logistic Regression（Version 0.1.0&url=https://zxyin.github.io/2017/11/09/深度学习简介/index.html&pic=https://zxyin.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World-第一篇博客&url=https://zxyin.github.io/2017/11/09/Hello World/index.html&pic=https://zxyin.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -458,7 +458,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Logistic Regression（Version 0.1.0&url=https://zxyin.github.io/2017/11/09/深度学习简介/index.html&via=Yin Zixin" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World-第一篇博客&url=https://zxyin.github.io/2017/11/09/Hello World/index.html&via=Yin Zixin" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -467,7 +467,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zxyin.github.io/2017/11/09/深度学习简介/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zxyin.github.io/2017/11/09/Hello World/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -476,7 +476,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://zxyin.github.io/2017/11/09/深度学习简介/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://zxyin.github.io/2017/11/09/Hello World/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -485,7 +485,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://zxyin.github.io/2017/11/09/深度学习简介/index.html&title=Logistic Regression（Version 0.1.0" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://zxyin.github.io/2017/11/09/Hello World/index.html&title=Hello World-第一篇博客" target="_blank">
             <li class="mdl-menu__item">
                 分享到 LinkedIn
             </li>
@@ -494,7 +494,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=殷子欣&#39;s Blog&title=Logistic Regression（Version 0.1.0&summary=&pics=https://zxyin.github.io/img/favicon.png&url=https://zxyin.github.io/2017/11/09/深度学习简介/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=殷子欣&#39;s Blog&title=Hello World-第一篇博客&summary=&pics=https://zxyin.github.io/img/favicon.png&url=https://zxyin.github.io/2017/11/09/Hello World/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -513,21 +513,10 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>先用一个<strong>超棒的</strong> 各种机器学习任务的顶级结果（论文） 汇总 Github项目占坑  - - 从 <strong>机器之心</strong> 上发现的<br>附上链接 <a href="https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems" target="_blank" rel="external">https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems</a></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Logistic Regression（下文简写为 LR）又称逻辑回归，是一种线性回归，非常适合进行二分类。可以说 <strong>LR 是一个相对来说很简单的神经网络</strong></p>
-<div align="center"><br><img src="http://oz7lylx2b.bkt.clouddn.com/LogReg_kiank.png" style="width:650px;height:400px;"><br></div>
-
-<p>由上图我们可以很清楚的看到，LR 的结构相对比较简单，主要包括：<strong>输入层</strong>和<strong>输出层</strong>，其中</p>
-<ul>
-<li><strong>输入层</strong>(Input Layer）：用于样本的读入，设一组样本的维数为（nx, 1）<em>//一般来说都是为列向量</em><br>那么m个样本组成的训练数据（Trainning Data）的维数为（nx, m）</li>
-</ul>
-<ul>
-<li><strong>输出层</strong>(Output Layer)：一共一个神经元，其中包括了一个<strong>激活函数</strong>(Activation Function)，若是用于进行二分类的话，输出的结果维数为(1, m），结果分为1和0两种(即True和False)</li>
-</ul>
-<h2 id="正向传播-Forward-Propagation"><a href="#正向传播-Forward-Propagation" class="headerlink" title="正向传播(Forward Propagation)"></a>正向传播(Forward Propagation)</h2><p>训练数据读入后，将会通过 w 和 b 进行加权变化，再通过激活函数（LR 一般用 Sigmoid 函数作为激活函数）把结果一一映射到（0, 1）区间内，其中w的维数为(nx, 1)，b的维数为（1, 1）<em>// Sigmoid 函数的图像就是上图那个像 S 的图像</em><br>Sigmoid函数的定义为：<br>$$sigmoid( w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}\tag{1}$$</p>
-<p>那么我们该如何描述输出结果的好坏呢？于是我们引入了 Loss Function，用 Loss Function 的大小来衡量与预期答案的差距。这样的函数其实有很多个，我们熟知的就是差平方，但是我们一般不使用它，因为差平方函数会有很多个极小值点，不利于我们后面的梯度下降（Gradient Descent）<br>一般采用的函数是这个函数（此处y为真实值，a为我们计算的值）：<br>$$L = -y\log(a)+(1-y)\log(1-a)\tag{2}$$</p>
-<p>我们把衡量总体结果的函数称为 Cost Function，其值为所有样本的 Loss Function 的算术平均数</p>
-<p><strong>数学公式表达：</strong><br>对于任何一个训练样本x:<br>$$z^{(i)} = w^T x^{(i)} + b \tag{3}$$<br>$$\hat{y}^{(i)} = a^{(i)} = sigmoid(z^{(i)})\tag{4}$$<br>$$ \mathcal{L}(a^{(i)}, y^{(i)}) =  - y^{(i)}  \log(a^{(i)}) - (1-y^{(i)} )  \log(1-a^{(i)})\tag{5}$$<br>Cost Function 为所有样本的 Loss Function 的算数平均数：<br>$$ J = \frac{1}{m} \sum_{i=1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{6}$$</p>
+        <p>从今天开始，我将把文章发表在自己的博客上。因为我觉得这个环境比起别的平台更加的安静，更适合想一些东西、写一些东西。在这有一种无拘无束的感觉，自己就是这个小世界的主人~</p>
+<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>这是“坑”与“填坑”的历史库<br>为自己总结<br>写的时候会查更多的东西，扩大知识面<br>督促自己学习</p>
+<h2 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h2><p>尽量多写，即使东西很简单、很小<br>尽量固定频率写，加强学习<br>这是给自己看的，不为别的，只为自己总结<br>别人提的建议虚心接受</p>
+<p><em>最后！愿不忘初心</em></p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -536,7 +525,7 @@
                             This blog is under a <a href="" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://zxyin.github.io/2017/11/09/深度学习简介/">https://zxyin.github.io/2017/11/09/深度学习简介/</a>
+                        <strong>本文链接：</strong><a href="https://zxyin.github.io/2017/11/09/Hello World/">https://zxyin.github.io/2017/11/09/Hello World/</a>
                     </p>
                 </blockquote>
         
@@ -558,19 +547,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2017/11/09/Logistic Regression/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2017/11/09/Hello-World-第一篇博客/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 

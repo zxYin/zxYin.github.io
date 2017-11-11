@@ -37,7 +37,7 @@
     
     <title>
         
-            Hello World-第一篇博客 | 
+            Logistic Regression | 
         
         殷子欣&#39;s Blog
     </title>
@@ -236,18 +236,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://zxyin.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Hello World-第一篇博客 | 殷子欣&#39;s Blog">
+    <meta property="og:title" content="Logistic Regression | 殷子欣&#39;s Blog">
     <meta property="og:image" content="https://zxyin.github.io/img/favicon.png" />
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Thu Nov 09 2017 18:25:31 GMT+0800" />
-        <meta property="article:modified_time" content="Thu Nov 09 2017 18:41:16 GMT+0800" />
+        <meta property="article:published_time" content="Thu Nov 09 2017 18:48:37 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Nov 11 2017 15:55:45 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Hello World-第一篇博客 | 殷子欣&#39;s Blog">
+    <meta name="twitter:title" content="Logistic Regression | 殷子欣&#39;s Blog">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://zxyin.github.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -255,7 +255,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html" />
+        <link rel="canonical" href="https://zxyin.github.io/2017/11/09/Logistic Regression/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -267,10 +267,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html",
-    "headline": "Hello World-第一篇博客",
-    "datePublished": "Thu Nov 09 2017 18:25:31 GMT+0800",
-    "dateModified": "Thu Nov 09 2017 18:41:16 GMT+0800",
+    "mainEntityOfPage": "https://zxyin.github.io/2017/11/09/Logistic Regression/index.html",
+    "headline": "Logistic Regression",
+    "datePublished": "Thu Nov 09 2017 18:48:37 GMT+0800",
+    "dateModified": "Sat Nov 11 2017 15:55:45 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Yin Zixin",
@@ -354,7 +354,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#目的"><span class="post-toc-number">1.</span> <span class="post-toc-text">目的</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原则"><span class="post-toc-number">2.</span> <span class="post-toc-text">原则</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#正向传播-和-反向传播"><span class="post-toc-number">2.</span> <span class="post-toc-text">正向传播 和 反向传播</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#正向传播-Forward-Propagation"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">正向传播(Forward Propagation)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#反向传播（Backward-propagation）"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">反向传播（Backward propagation）</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#完成整个模型"><span class="post-toc-number">3.</span> <span class="post-toc-text">完成整个模型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进行多次梯度下降迭代"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">进行多次梯度下降迭代</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进行二分类"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">进行二分类</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结语"><span class="post-toc-number">4.</span> <span class="post-toc-text">结语</span></a></li></ol>
     </ul>
     
 
@@ -386,7 +386,7 @@
         
     
             <p class="article-headline-p">
-                Hello World-第一篇博客
+                Logistic Regression
             </p>
         </div>
 
@@ -427,7 +427,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC2ElEQVR42u3aQVLkQAwEwPn/p9kX2FS1DGu60ydiGNxOc1CopM/XkdcHGxsbGxsbGxsb+5XsT3xd/dU3h13c5/6U/PTimbGxsbG3ZiePfvXJ1ePev4K6/FycWDwzNjY29gHs+3Jyf2Tyt0lxau9ZnIuNjY2NHTDyO+fgpJhhY2NjY6+x89Cn/f7aM2BjY2Njt4FODkvCqeSf8d+yNGxsbOzXs/Oh6Xt+/tX5NjY2NvaL2ZOB61oZy0tjW2i/OQsbGxt7U3ZeGB4I6MsB8CSEwsbGxj6NnTDamGlyn/ZlRZEWNjY29qbsPNafNAOTRZ+kFYnGydjY2NjHsNcWcdaGsnnw1MZM2NjY2Oewnxqm5ms6yefJ+uYD821sbGzsLdhJiWoLVf1AcfzUrmBiY2Njn8aeIPMBcDsYyEtdHSphY2Njb8FeG6O2D9Q2M22BrAsYNjY29qbs/Pj283zoW2PiwTA2Njb2rux2NWcyDF5rbyZNDjY2NvYJ7LzkrMX37UJPOxhOii42Njb23uzJATlvbQA8ibewsbGxz2FPyszaKHdtqNCGXIutCDY2NvZ27Pxx83ZiXgLzIQE2Njb2mezHVmTKpZzJEOKBLA0bGxv7z7LzOKkdGDwVUf3SfBsbGxv7z7KTVmQSA7UtSnuHoihiY2Njb81uQ/zk+/NVzrYE1uMBbGxs7O3YSUlYW5dJGpsJKWpmsLGxsY9h50PZfGSbl65knJAMBrCxsbHPZH+CK38pbfTTkvIoChsbG3tvdnvNC95ajLX2W2xsbOwT2GuFoQ2b8pYmL4FJAcbGxsY+h50XrUmTkGMmhbNe2cHGxsbeiJ03DGuFJ1/cmUddo/EANjY29mHseaOy9oLydR9sbGxs7DbQz2P9+8ipHgD8dAHDxsbGfj07D3TyIteuB80blbqAYWNjY2/BXgtufuKl1FFRPorAxsbG3pR9zoWNjY2NjY2NjY39musffNlTJSHyS94AAAAASUVORK5CYII=">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACy0lEQVR42u3aS5LiMBAFQO5/6Z7tbDDvlUyHW0qvCLAlpxZU1Of1c+T1wsbGxsbGxsbGxn4k+xVf7576/5tkzXf3vFu5Xf/tCtjY2Nhbsz/89V++xPVx5L+u7/7hKWxsbOwD2NdBJdkyD0WzQDW7BxsbGxt7uE2ZKnzvaLCxsbGxk7CU3NmGtPwzNjY2NnZeoEnCSdJCaEtUeTqEjY2NfSY7Txue8/lX+9vY2NjYD2a3V3s0dzV0Z2tiY2Njn8BuhyZnKcpKEGobD9jY2NhnsvPwkBeA2oO7t5iFjY2NfQ67DTZ5opKsP2sMzw4aGxsbe1f2rHCTP7USotqG9LC/jY2Njb0pezYun79iXipqg9ZSAMPGxsb+4+ykbHT9EnnC0Bb621FObGxs7NPYs3GZhJGHvfWGBDY2Njb2SnhYSRjW1xwWlbCxsbG3Y89CVP7rrIzVJjbY2NjYp7Hb5muOyb+JEomF4hc2Njb2Oey8vdoGpPZY27eq2wPY2NjYG7HrwZeg9NMO5eRrLo0EYWNjY2/KngWPGbJt3OaDO9HxYWNjY2/KzhOD4WZxcjIrLRUhDRsbG3tTdl42WglFySHOVijaCdjY2NibshNG20j4Wbhmw0N1oxcbGxt7O3abhNx156w58cWZU2xsbOw/zp699EorNw+f68ESGxsbe29220xtG67tCObKmsXwJTY2Nvam7BtaqmVYysNbHhSxsbGxT2a36cRdjYQ2QN5QVMLGxsbegr3SiP1eQT8pYCW/YmNjY5/AnjVck+3z42hToOE4JjY2NvbW7JUiUVsSygv6+S7RXtjY2NgHsPOEIS8w5ZjXwhXthY2NjY293E5oj7IdJ/rwLDY2Njb25caz1fL189GfX0pFsLGxsR/JXinotMWmtpy00k7AxsbGPoHdFm7uasfm5f42dGFjY2Ofwz7nwsbGxsbGxsbGxn7M9Q+3vGg6L9tXZQAAAABJRU5ErkJggg==">
     
 </ul>
 
@@ -449,7 +449,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World-第一篇博客&url=https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html&pic=https://zxyin.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Logistic Regression&url=https://zxyin.github.io/2017/11/09/Logistic Regression/index.html&pic=https://zxyin.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -458,7 +458,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World-第一篇博客&url=https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html&via=Yin Zixin" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Logistic Regression&url=https://zxyin.github.io/2017/11/09/Logistic Regression/index.html&via=Yin Zixin" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -467,7 +467,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://zxyin.github.io/2017/11/09/Logistic Regression/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -476,7 +476,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://zxyin.github.io/2017/11/09/Logistic Regression/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -485,7 +485,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html&title=Hello World-第一篇博客" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://zxyin.github.io/2017/11/09/Logistic Regression/index.html&title=Logistic Regression" target="_blank">
             <li class="mdl-menu__item">
                 分享到 LinkedIn
             </li>
@@ -494,7 +494,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=殷子欣&#39;s Blog&title=Hello World-第一篇博客&summary=&pics=https://zxyin.github.io/img/favicon.png&url=https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=殷子欣&#39;s Blog&title=Logistic Regression&summary=&pics=https://zxyin.github.io/img/favicon.png&url=https://zxyin.github.io/2017/11/09/Logistic Regression/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -513,10 +513,163 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>从今天开始，我将把文章发表在自己的博客上。因为我觉得这个环境比起别的平台更加的安静，更适合想一些东西、写一些东西。在这有一种无拘无束的感觉，自己就是这个小世界的主人~</p>
-<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>这是“坑”与“填坑”的历史库<br>为自己总结<br>写的时候会查更多的东西，扩大知识面<br>督促自己学习</p>
-<h2 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h2><p>尽量多写，即使东西很简单、很小<br>尽量固定频率写，加强学习<br>这是给自己看的，不为别的，只为自己总结<br>别人提的建议虚心接受</p>
-<p><em>最后！愿不忘初心</em></p>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Logistic Regression（下文简写为 LR）又称逻辑回归，是一种线性回归，非常适合进行二分类。可以说 <strong>LR 是一个相对来说很简单的神经网络</strong></p>
+<div align="center"><br>    <img src="http://oz7lylx2b.bkt.clouddn.com/LogReg_kiank.png" style="width:650px;height:400px;"><br></div>
+
+
+<p>由上图我们可以很清楚的看到，LR 的结构相对比较简单，主要包括：<strong>输入层</strong> 和 <strong>输出层</strong>，其中</p>
+<ul>
+<li><strong>输入层</strong>(Input Layer）：用于样本的读入，设一组样本的维数为（nx, 1）<em>//一般来说都是为列向量</em><br>那么m个样本组成的训练数据（Trainning Data）的维数为（nx, m）</li>
+</ul>
+<ul>
+<li><strong>输出层</strong>(Output Layer)：一共一个神经元，其中包括了一个<strong>激活函数</strong>(Activation Function)，若是用于进行二分类的话，输出的结果维数为(1, m），结果分为1和0两种(即True和False)</li>
+</ul>
+<h2 id="正向传播-和-反向传播"><a href="#正向传播-和-反向传播" class="headerlink" title="正向传播 和 反向传播"></a>正向传播 和 反向传播</h2><h3 id="正向传播-Forward-Propagation"><a href="#正向传播-Forward-Propagation" class="headerlink" title="正向传播(Forward Propagation)"></a>正向传播(Forward Propagation)</h3><p>训练数据读入后，将会通过 w 和 b 进行加权变化，再通过激活函数（LR 二分类一般用 Sigmoid 函数作为激活函数）把结果一一映射到（0, 1）区间内，其中w的维数为(nx, 1)，b的维数为（1, 1）<em>// Sigmoid 函数的图像就是上图那个像 S 的图像</em><br>Sigmoid函数的定义为：<br>$$sigmoid(w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}\tag{1}$$<br>用 Python 实现：</p>
+<pre><code>def sigmoid(z):
+    &quot;&quot;&quot;
+    Compute the sigmoid of z
+
+    Arguments:
+    z -- A scalar or numpy array of any size.
+
+    Return:
+    s -- sigmoid(z)
+    &quot;&quot;&quot;
+
+    s = 1 / (1 + np.exp(-z))
+
+    return s
+</code></pre><p>那么我们该如何描述输出结果的好坏呢？于是我们引入了 Loss Function，用 Loss Function 的大小来衡量与预期答案的差距。这样的函数其实有很多个，我们熟知的就是差平方，但是我们一般不使用它，因为差平方函数会有很多个极小值点，不利于我们后面的梯度下降（Gradient Descent）<br>一般采用的函数是这个函数（此处y为真实值，a为我们计算的值）：<br>$$L = -y\log(a) + (1 - y)\log(1 - a)\tag{2}$$</p>
+<p>我们把衡量总体结果的函数称为 Cost Function，其值为所有样本的 Loss Function 的算术平均数</p>
+<p><strong>数学公式表达：</strong><br>对于任何一个训练样本x:<br>$$z^{(i)} = w^T x^{(i)} + b \tag{3}$$<br>$$\hat{y}^{(i)} = a^{(i)} = sigmoid(z^{(i)})\tag{4}$$<br>$$ \mathcal{L}(a^{(i)}, y^{(i)}) =  - y^{(i)}  \log(a^{(i)}) - (1-y^{(i)} )  \log(1-a^{(i)})\tag{5}$$<br>Cost Function 为所有样本的 Loss Function 的算数平均数：<br>$$ J = \frac{1}{m} \sum_{i = 1}^m \mathcal{L}(a^{(i)}, y^{(i)})\tag{6}$$</p>
+<h3 id="反向传播（Backward-propagation）"><a href="#反向传播（Backward-propagation）" class="headerlink" title="反向传播（Backward propagation）"></a>反向传播（Backward propagation）</h3><p>在得到 J 的值后，我们就要根据这个值来对先前设定的 w 和 b 进行调整，这里我们采用了 <strong>梯度下降法</strong>（Gradient Descent）</p>
+<div align="center"><br>    <img src="http://oz7lylx2b.bkt.clouddn.com/20171021111704010.jpg"><br></div>
+
+
+<p>由 LR 和我们选定的 Loss Function 可知，得出的 Cost Function 应该是一个与上图类似的下凸函数，所以无论我们从图上的哪一点出发，只要沿着坡往下走，总能走到一点。梯度下降法就是这个原理，具体的为：扔取一个初始点（在 LR 中，可以取 w = zeros((nx, 1)), b = 0）然后沿着斜率最大的方向向下一步。这就是一次 <strong>迭代</strong>（Iteration），经过一定次数的迭代后，就能达到最小值点。</p>
+<p>所以最关键的就是求斜率最大的方向，也就是求 J 对 w 和 b 的偏导数。也就是经过下方的图，一步步往回求偏导（图中算的是一个样本，并且假设的输入样本中只有两个 Feature 即 $x_1, x_2$ 相对应的有两个 w）</p>
+<div align="center"><br>    <img src="http://oz7lylx2b.bkt.clouddn.com/1.jpg"><br></div>
+
+
+<p>$$da = \frac{\partial L(a, y)}{\partial a} = -\frac{y}{a} + \frac{1 - y}{1 - a}\tag{7}$$<br>$$dz = \frac{\partial L(a, y)}{\partial z} = \frac{\partial L(a, y)}{\partial a}\frac{\partial a}{\partial z} = a - y\tag{8}$$<br>$$dw_1 = \frac{\partial L(a, y)}{\partial a}\frac{\partial a}{\partial z}\frac{\partial z}{\partial w_1} = x_1 dz\tag{9}$$<br>$$dw_2 = \frac{\partial L(a, y)}{\partial a}\frac{\partial a}{\partial z}\frac{\partial z}{\partial w_2} = x_2 dz\tag{10}$$<br>$$db = \frac{\partial L(a, y)}{\partial a}\frac{\partial a}{\partial z}\frac{\partial z}{\partial b} = dz\tag{11}$$<br>求得了各个参数的偏导后，我们就根据我们制定好的 <strong>学习速率</strong>（Learning Rate 一个控制梯度下降速率的参数）对 w 和 b 进行修正<br>$$w_1 = w_1 - \alpha dw_1\tag{12}$$<br>$$w_2 = w_2 - \alpha dw_2\tag{13}$$<br>$$b = b - \alpha db\tag{14}$$<br>以上是对一个样本进行的一次梯度下降迭代，如果是对 m 个样本一起进行一次迭代的话，就是将每一个样本的变化量求和平均<br>$$ \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{15}$$<br>$$ \frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^m (a^{(i)}-y^{(i)})\tag{16}$$</p>
+<p>正向传播 和 反向传播 用 Python 实现：</p>
+<pre><code>def propagate(w, b, X, Y):
+    &quot;&quot;&quot;
+    Implement the cost function and its gradient for the propagation explained above
+
+    Arguments:
+    w -- weights, a numpy array of size (num_px * num_px * 3, 1)
+    b -- bias, a scalar
+    X -- data of size (num_px * num_px * 3, number of examples)
+    Y -- true &quot;label&quot; vector (containing 0 if non-cat, 1 if cat) of size (1, number of examples)s
+
+    Return:
+    cost -- negative log-likelihood cost for logistic regression
+    dw -- gradient of the loss with respect to w, thus same shape as w
+    db -- gradient of the loss with respect to b, thus same shape as b
+    &quot;&quot;&quot;
+
+    m = X.shape[1]
+
+    # FORWARD PROPAGATION (FROM X TO COST)
+    A = sigmoid(np.dot(w.T, X) + b)# compute activation
+
+    # compute cost
+    cost = -np.sum(Y * np.log(A) + (1 - Y) * np.log(1 - A)) / m   
+
+    # BACKWARD PROPAGATION (TO FIND GRAD)
+    dw = np.dot(X, (A - Y).T) / m
+    db = np.sum(A - Y) / m
+
+    assert(dw.shape == w.shape)
+    assert(db.dtype == float)
+    cost = np.squeeze(cost)
+    assert(cost.shape == ())
+
+    grads = {&quot;dw&quot;: dw,
+             &quot;db&quot;: db}
+
+    return grads, cost
+</code></pre><h2 id="完成整个模型"><a href="#完成整个模型" class="headerlink" title="完成整个模型"></a>完成整个模型</h2><h3 id="进行多次梯度下降迭代"><a href="#进行多次梯度下降迭代" class="headerlink" title="进行多次梯度下降迭代"></a>进行多次梯度下降迭代</h3><p>刚刚我们已经知道了如何进行一次 正向传播 以及 反向传播 了。现在我们将要根据我们设定的 <strong>迭代次数</strong> 来不停地更新我们 w 和 b 使得 J 竟可能的小<br>用 Python 实现：</p>
+<pre><code>def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
+    &quot;&quot;&quot;
+    This function optimizes w and b by running a gradient descent algorithm
+
+    Arguments:
+    w -- weights, a numpy array of size (num_px * num_px * 3, 1)
+    b -- bias, a scalar
+    X -- data of shape (num_px * num_px * 3, number of examples)
+    Y -- true &quot;label&quot; vector (containing 0 if non-cat, 1 if cat), of shape (1, number of examples)
+    num_iterations -- number of iterations of the optimization loop
+    learning_rate -- learning rate of the gradient descent update rule
+    print_cost -- True to print the loss every 100 steps
+
+    Returns:
+    params -- dictionary containing the weights w and bias b
+    grads -- dictionary containing the gradients of the weights and bias with respect to the cost function
+    costs -- list of all the costs computed during the optimization, this will be used to plot the learning curve.
+    &quot;&quot;&quot;
+
+    costs = []
+
+    for i in range(num_iterations):
+
+
+        # Cost and gradient calculation (≈ 1-4 lines of code)
+        ### START CODE HERE ### 
+        grads, cost = propagate(w, b, X, Y)
+        ### END CODE HERE ###
+
+        # Retrieve derivatives from grads
+        dw = grads[&quot;dw&quot;]
+        db = grads[&quot;db&quot;]
+
+        w = w - learning_rate * dw
+        b = b - learning_rate * db
+
+        # Record the costs
+        if i % 100 == 0:
+            costs.append(cost)
+
+        # Print the cost every 100 training examples
+        if print_cost and i % 100 == 0:
+            print (&quot;Cost after iteration %i: %f&quot; %(i, cost))
+
+    params = {&quot;w&quot;: w,
+              &quot;b&quot;: b}
+</code></pre><h3 id="进行二分类"><a href="#进行二分类" class="headerlink" title="进行二分类"></a>进行二分类</h3><p>完成梯度下降后，我们将会获得一组 w 和 b，现在我们要用这两个参数来对 <strong>测试数据</strong>（Testing Data）进行二分类，由于最终算出来的值是在区间（0, 1）上的小数，所以我们通过这个方式使得最终的输出的值为 0 (if activation &lt;= 0.5) 或者 1 (if activation &gt; 0.5)<br>用 Python 实现：</p>
+<pre><code>def predict(w, b, X):
+    &#39;&#39;&#39;
+    Predict whether the label is 0 or 1 using learned logistic regression parameters (w, b)
+
+    Arguments:
+    w -- weights, a numpy array of size (num_px * num_px * 3, 1)
+    b -- bias, a scalar
+    X -- data of size (num_px * num_px * 3, number of examples)
+
+    Returns:
+    Y_prediction -- a numpy array (vector) containing all predictions (0/1) for the examples in X
+    &#39;&#39;&#39;
+
+    m = X.shape[1]
+    Y_prediction = np.zeros((1,m))
+    w = w.reshape(X.shape[0], 1)
+
+    A = sigmoid(np.dot(w.T, X) + b)
+
+    for i in range(A.shape[1]):
+
+        # Convert probabilities A[0,i] to actual predictions p[0,i]
+        if A[0, i] &lt;= 0.5 :
+            Y_prediction[0, i] = 0
+        else :
+            Y_prediction[0, i] = 1
+
+    assert(Y_prediction.shape == (1, m))
+
+    return Y_prediction
+</code></pre><p>最终，我们就得到了我们想要的预测值</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>其实以上的描述是非常浅层次的，只能算得上是把 LR 实现了一遍，具体的如何 优化（其实上面的代码中用了Vectorization，但是没具体阐述） 防止过拟合 选择 Hyperparameter 等等一堆技术都没有涉及，不过这些方法 我将会在后续的博客中进行描述。</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -525,7 +678,7 @@
                             This blog is under a <a href="" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/">https://zxyin.github.io/2017/11/09/Hello-World-第一篇博客/</a>
+                        <strong>本文链接：</strong><a href="https://zxyin.github.io/2017/11/09/Logistic Regression/">https://zxyin.github.io/2017/11/09/Logistic Regression/</a>
                     </p>
                 </blockquote>
         
@@ -547,19 +700,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/11/09/深度学习简介/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2017/11/09/Hello World/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
