@@ -1,0 +1,6 @@
+@article{wang2022pdfgc,
+    title={Progressive Disentangled Representation Learning for Fine-Grained Controllable Talking Head Synthesis},
+    author={Wang, Duomin and Deng, Yu and Yin, Zixin and Shum, Heung-Yeung and Wang, Baoyuan},
+    journal={arXiv:2211.14506},
+    year={2022}
+}
