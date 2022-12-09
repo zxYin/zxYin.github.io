@@ -1,0 +1,6 @@
+@article{yu2022thpad,
+  title={Talking Head Generation with Probabilistic Audio-to-Visual Diffusion Priors},
+  author={Yu, Zhentao and Yin, Zixin and Zhou, Deyu and Wang, Duomin and Wong, Finn and Wang, Baoyuan},
+  journal={arXiv:2212.04248},
+  year={2022}
+}
