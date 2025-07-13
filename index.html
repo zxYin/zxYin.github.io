@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -24,9 +24,36 @@
               <p style="text-align:center">
                 Email: zixin.yin[at]connect.ust.hk &nbsp; &nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=bF7vffsAAAAJ&hl=en">Google Scholar </a>&nbsp; &nbsp;&nbsp;&nbsp;<a href="https://github.com/zxYin">Github</a>
               </p>
-              <p>I am currently a PhD student at <a href="https://cse.hkust.edu.hk">the Hong Kong University of Science and Technology</a> under the supervision of <a href="https://seng.hkust.edu.hk/about/people/faculty/lionel-ming-shuan-ni">Prof. Lionel Ni</a> and <a href="https://www.microsoft.com/en-us/research/people/hshum/">Prof. Harry Shum</a> from 2021. In the meantime, I work closely with <a href="https://sites.google.com/site/zjuwby/?pli=1">Baoyuan Wang</a> and <a href="https://dorniwang.github.io">Duomin Wang</a> as a research intern at <a href="https://www.linkedin.com/company/xiaobing-ai">Xiaobing.ai</a> from 2022. My research interests include talking head synthesis, representation learning, disentanglement and 3D face reconstruction.
+              <p>
+                I am currently a PhD student at 
+                <a href="https://cse.hkust.edu.hk">The Hong Kong University of Science and Technology</a>, 
+                under the supervision of 
+                <a href="https://seng.hkust.edu.hk/about/people/faculty/lionel-ming-shuan-ni">Prof. Lionel Ni</a> (president of HKUST-gz)
+                and 
+                <a href="https://www.microsoft.com/en-us/research/people/hshum/">Prof. Harry Shum</a> (former executive vice president of Microsoft), 
+                since 2021.
               </p>
-              <p>Before that, I received my B.S. from Department of Engineering Computer Science and Technology (Honors Science Program) and satisfied the requirements of the Honors Youth Program in <a href="https://bjb.xjtu.edu.cn/">Xi'an Jiaotong University</a> in 2021.</p>
+              <p>
+                From April 2023 to April 2025, I served as the co-founder of <a href="">Morph Studio</a>. 
+                Prior to that, I worked closely with 
+                <a href="https://sites.google.com/site/zjuwby/?pli=1">Baoyuan Wang</a> 
+                and 
+                <a href="https://dorniwang.github.io">Duomin Wang</a> 
+                as a research intern at 
+                <a href="https://www.linkedin.com/company/xiaobing-ai">Xiaobing.ai</a> starting in 2022. 
+                My research interests include image and video generation, visual editing, and talking head synthesis.
+              </p>
+              <p>
+                From August 2019 to May 2021, I worked with 
+                <a href="https://people.eecs.berkeley.edu/~sequin/">Prof. Carlo H. Séquin</a> 
+                at UC Berkeley on the graphics and CAD project 
+                <a href="https://jipcad.github.io/">JIPCAD</a>.
+              </p>
+              <p>
+                I received my B.S. from the Department of Computer Science and Technology 
+                (Honors Science Program) and completed the Honors Youth Program (少年班) at 
+                <a href="https://bjb.xjtu.edu.cn/">Xi'an Jiaotong University</a> in 2021.
+              </p>
             </td>
             <td style="padding:15% 7% 7% 7%;width:40%;max-width:40%">
               <a href="images/zixin.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/zixin.png" class="hoverZoomLink"></a>
@@ -45,26 +72,47 @@
         <tr></tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one" >
-                  <video playsinline autoplay loop preload muted style="width:100%;max-width:100%; position: absolute;top: -5%">
-                      <source src='images/thpad.mp4'>
-                  </video>
+                  <img src='images/colorctrl.png' style="width:100%;max-width:100%; position: absolute;">
               </div>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Talking Head Generation with Probabilistic Audio-to-Visual Diffusion Priors</papertitle>
+              <papertitle>Training-Free Text-Guided Color Editing with Multi-Modal Diffusion Transformer</papertitle>
               <br>
-              Zhentao Yu*, <strong>Zixin Yin*</strong>, Deyu Zhou*, Duomin Wang, Finn Wong, Baoyuan Wang
+              <strong>Zixin Yin</strong>, Xili Dai, Ling-Hao Chen, Deyu Zhou, Jianan Wang, Duomin Wang, Gang Yu, Lionel M. Ni, Lei Zhang, Heung-Yeung Shum
               <br>
-              <em>ICCV</em> 2023,
+              <em>arXiv</em> 2025,
               <br>
-              <a href="https://arxiv.org/abs/2212.04248">[PDF]</a>
-              <a href="https://zxyin.github.io/TH-PAD">[Project]</a>
-              <a href="">[Code(coming soon)]</a>
-              <a href="images/thpad.txt">[BibTeX]</a>
+              <a>[PDF]</a>
+              <a>[Project]</a>
+              <a>[Code(coming soon)]</a>
+              <a>[BibTeX]</a>
               <br>
-              <p>We introduce a simple and novel framework for one-shot audio-driven talking head generation. Unlike prior works that require additional driving sources for controlled synthesis in a deterministic manner, we instead probabilistically sample all the holistic lip-irrelevant facial motions (i.e. pose, expression, blink, gaze, etc.) to semantically match the input audio while still maintaining both the photo-realism of audio-lip synchronization and the overall naturalness.</p>
+              <p>We introduce ColorCtrl, a training-free method for text-guided color editing in images and videos. It enables precise, word-level control of color attributes while preserving geometry and material consistency. Experiments on SD3, FLUX.1-dev, and CogVideoX show that ColorCtrl outperforms existing training-free and commercial models, including GPT-4o and FLUX.1 Kontext Max, and generalizes well to instruction-based editing frameworks.</p>
           </td>
-      </tr>
+        </tr>
+          <tr></tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" >
+                    <video playsinline autoplay loop preload muted style="width:100%;max-width:100%; position: absolute;top: -5%">
+                        <source src='images/thpad.mp4'>
+                    </video>
+                </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Talking Head Generation with Probabilistic Audio-to-Visual Diffusion Priors</papertitle>
+                <br>
+                Zhentao Yu*, <strong>Zixin Yin*</strong>, Deyu Zhou*, Duomin Wang, Finn Wong, Baoyuan Wang
+                <br>
+                <em>2023 IEEE International Conference on Computer Vision</em>, ICCV 2023,
+                <br>
+                <a href="https://arxiv.org/abs/2212.04248">[PDF]</a>
+                <a href="https://zxyin.github.io/TH-PAD">[Project]</a>
+                <a href="">[Code(coming soon)]</a>
+                <a href="images/thpad.txt">[BibTeX]</a>
+                <br>
+                <p>We introduce a simple and novel framework for one-shot audio-driven talking head generation. Unlike prior works that require additional driving sources for controlled synthesis in a deterministic manner, we instead probabilistically sample all the holistic lip-irrelevant facial motions (i.e. pose, expression, blink, gaze, etc.) to semantically match the input audio while still maintaining both the photo-realism of audio-lip synchronization and the overall naturalness.</p>
+            </td>
+        </tr>
 
         <tr></tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -79,12 +127,12 @@
                 <br>
                 Duomin Wang, Yu Deng, <strong>Zixin Yin</strong>, Heung-Yeung Shum, Baoyuan Wang
                 <br>
-                <em>CVPR</em> 2023,
+                <em>2023 IEEE Conference on Computer Vision and Pattern Recognition</em>, CVPR 2023,
                 <br>
                 <a href="https://arxiv.org/abs/2211.14506">[PDF]</a>
                 <a href="https://dorniwang.github.io/PD-FGC/">[Project]</a>
-                <a href="">[Code(coming soon)]</a>
-				<a href="images/pdfgc.txt">[BibTeX]</a>
+                <a href="https://github.com/Dorniwang/PD-FGC-inference">[Code]</a>
+                <a href="images/pdfgc.txt">[BibTeX]</a>
                 <br>
                 <p>We present a novel one-shot talking head synthesis method that achieves disentangled and fine-grained control over lip motion, eye gaze&blink, head pose, and emotional expression.
                      We represent different motions via disentangled latent representations and leverage an image generator to synthesize talking heads from them.</p>
@@ -101,7 +149,7 @@
             <td style="padding:20px;width:0%;vertical-align:middle">
             </td>
             <td style="padding:20px;width:100%;vertical-align:middle">
-		<hr style="margin-top:0px">
+                <hr style="margin-top:0px">
                 <p>The website template was adapted from <a href="https://dorniwang.github.io">Duomin Wang</a>.</p>
             </td>
         </tr>
