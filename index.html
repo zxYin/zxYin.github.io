@@ -97,6 +97,21 @@
       <section class="publication-list" aria-label="Publications">
         <article class="publication-card panel" data-reveal>
           <div class="publication-media">
+            <video playsinline autoplay loop preload="metadata" muted>
+              <source src="images/m4m.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="publication-copy">
+            <h3>Motion4Motion: Motion Transfer Across Subjects at Inference</h3>
+            <p class="publication-authors">Ling-Hao Chen, <strong>Zixin Yin</strong>, Duomin Wang, Xianfang Zeng, Gang Yu</p>
+            <p class="publication-venue"><em>ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques</em>, ACM SIGGRAPH 2026,</p>
+            <p class="publication-badge">Oral Presentation</p>
+            <p class="publication-abstract">The first training-free cross-species motion transfer framework that models motion flow instead of skeletons, enabling motion transfer across diverse subjects such as human-to-panda directly at inference time.</p>
+          </div>
+        </article>
+
+        <article class="publication-card panel" data-reveal>
+          <div class="publication-media">
             <img src="images/reasonedit.jpg" alt="ReasonEdit preview" loading="lazy">
           </div>
           <div class="publication-copy">
@@ -125,7 +140,7 @@
               <a href="https://zxyin.github.io/ColorCtrl">[Project]</a>
               <a href="https://github.com/zxYin/ColorCtrl_Code">[code]</a>
             </div>
-            <p class="publication-abstract">We introduce ColorCtrl, a training-free method for text-guided color editing in images and videos. It enables precise, word-level control of color attributes while preserving geometry and material consistency. Experiments on SD3, FLUX.1-dev, and CogVideoX show that ColorCtrl outperforms existing training-free and commercial models, including GPT-4o and FLUX.1 Kontext Max, and generalizes well to instruction-based editing frameworks.</p>
+            <p class="publication-abstract">We introduce ColorCtrl, a training-free method for text-guided color editing in images and videos. It enables precise control of color attributes while preserving geometry and material consistency. Experiments on SD3, FLUX.1-dev, and CogVideoX show that ColorCtrl outperforms existing training-free and commercial models, including GPT-4o and FLUX.1 Kontext Max, and generalizes well to instruction-based editing frameworks.</p>
           </div>
         </article>
 
@@ -202,7 +217,7 @@
               <a href="https://github.com/LinghaoChan/Motion2Motion_codes">[Code]</a>
               <a href="https://youtu.be/EMdKwyHKSTc">[Demo Video]</a>
             </div>
-            <p class="publication-abstract">This work addresses animation retargeting across characters with differing skeletal topologies. Motion2Motion is a novel, training-free framework that requires only a few target motions and sparse bone correspondences. It overcomes topological inconsistencies without large datasets. Extensive evaluations show strong performance in both similar and cross-species settings, with practical applications in user-facing tools. Code and data will be released.</p>
+            <p class="publication-abstract">This work addresses animation retargeting across characters with differing skeletal topologies. Motion2Motion is a novel, training-free framework that requires only a few target motions and sparse bone correspondences. It overcomes topological inconsistencies without large datasets. Extensive evaluations show strong performance in both similar and cross-species settings, with applications in user-facing tools.</p>
           </div>
         </article>
 
@@ -242,7 +257,7 @@
               <a href="https://zxyin.github.io/TH-PAD">[Project]</a>
               <a href="images/thpad.txt">[BibTeX]</a>
             </div>
-            <p class="publication-abstract">We introduce a simple and novel framework for one-shot audio-driven talking head generation. Unlike prior works that require additional driving sources for controlled synthesis in a deterministic manner, we instead probabilistically sample all the holistic lip-irrelevant facial motions (i.e. pose, expression, blink, gaze, etc.) to semantically match the input audio while still maintaining both the photo-realism of audio-lip synchronization and the overall naturalness.</p>
+            <p class="publication-abstract">We introduce a simple and novel framework for one-shot audio-driven talking head generation. Unlike prior works that require additional driving sources for controlled synthesis in a deterministic manner, we instead probabilistically sample all the holistic lip-irrelevant facial motions to semantically match the input audio while still maintaining both the photo-realism of audio-lip synchronization and the overall naturalness.</p>
           </div>
         </article>
 
@@ -262,7 +277,7 @@
               <a href="https://github.com/Dorniwang/PD-FGC-inference">[Code]</a>
               <a href="images/pdfgc.txt">[BibTeX]</a>
             </div>
-            <p class="publication-abstract">We present a novel one-shot talking head synthesis method that achieves disentangled and fine-grained control over lip motion, eye gaze&amp;blink, head pose, and emotional expression. We represent different motions via disentangled latent representations and leverage an image generator to synthesize talking heads from them.</p>
+            <p class="publication-abstract">We present a novel one-shot talking head synthesis method that achieves disentangled and fine-grained control over lip motion, eye gaze&amp;blink, head pose, and expression. We represent different motions via disentangled latent representations and leverage an image generator to synthesize talking heads from them.</p>
           </div>
         </article>
       </section>
