@@ -2,9 +2,23 @@
   var root = document.documentElement;
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var revealItems = document.querySelectorAll("[data-reveal]");
+  var settleRevealItem = function (item) {
+    if (item.classList.contains("is-settled")) {
+      return;
+    }
+
+    var delay = parseFloat(window.getComputedStyle(item).getPropertyValue("--delay")) || 0;
+
+    window.setTimeout(function () {
+      item.classList.add("is-settled");
+      item.style.setProperty("--delay", "0ms");
+    }, delay + 720);
+  };
   var showAll = function () {
     revealItems.forEach(function (item) {
       item.classList.add("is-visible");
+      item.classList.add("is-settled");
+      item.style.setProperty("--delay", "0ms");
     });
   };
 
@@ -19,6 +33,7 @@
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
+            settleRevealItem(entry.target);
             observer.unobserve(entry.target);
           }
         });
@@ -42,6 +57,7 @@
         var rect = item.getBoundingClientRect();
         if (rect.top < window.innerHeight * 0.92 && rect.bottom > window.innerHeight * 0.08) {
           item.classList.add("is-visible");
+          settleRevealItem(item);
           observer.unobserve(item);
         }
       });
