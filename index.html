@@ -7,23 +7,51 @@
   <meta name="keywords" content="Zixin Yin,殷子欣,homepage,主页,computer vision,xiaobing.ai,XJTU,Xi'an Jiaotong University,HKUST,Hong Kong University of Science and Technology,talking head synthesis,representation learning,facial landmark detection,3D face reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="ZGzK6r6fLSJ5KADM0BOqlDLqo2ij9W8IaM7XO_kHHlU">
-  <meta name="theme-color" content="#edf5ff">
+  <meta name="theme-color" content="#07090d">
   <title>Zixin Yin (殷子欣)'s Homepage</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Instrument+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="page-shell">
+    <div class="ambient-stage" aria-hidden="true">
+      <canvas class="ambient-particles"></canvas>
+      <div class="ambient-glow ambient-glow-a"></div>
+      <div class="ambient-glow ambient-glow-b"></div>
+      <div class="ambient-ring ambient-ring-a"></div>
+      <div class="ambient-ring ambient-ring-b"></div>
+    </div>
+
+    <div class="topbar" data-reveal>
+      <a class="brandmark" href="#top">
+        <span class="brandmark-mark">ZY</span>
+        <span class="brandmark-copy">
+          <strong>Zixin Yin</strong>
+          <span>Personal homepage</span>
+        </span>
+      </a>
+      <nav class="topbar-nav" aria-label="Page navigation">
+        <a href="#top">Overview</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </div>
+
     <header class="hero" id="top">
-      <div class="hero-copy panel panel-glow" data-reveal>
+      <div class="hero-copy" data-reveal>
+        <p class="hero-kicker">Overview</p>
         <h1 class="hero-name">Zixin Yin <span>(殷子欣)</span></h1>
         <div class="availability-banner" role="note">
           <span class="availability-dot" aria-hidden="true"></span>
           <span>Graduating Spring 2027. Open to full-time roles.</span>
+        </div>
+        <div class="hero-signals" aria-label="Research areas">
+          <span>Image + video generation</span>
+          <span>Visual editing</span>
+          <span>Talking head synthesis</span>
         </div>
         <div class="bio-stack">
           <p class="lead-paragraph">
@@ -65,17 +93,21 @@
       </div>
 
       <aside class="hero-side" data-reveal>
-        <div class="portrait-panel panel">
-          <div class="portrait-orbit portrait-orbit-a" aria-hidden="true"></div>
-          <div class="portrait-orbit portrait-orbit-b" aria-hidden="true"></div>
+        <div class="portrait-panel">
           <div class="portrait-frame">
             <a href="images/zixin.png">
               <img src="images/zixin.png" alt="Profile photo of Zixin Yin">
             </a>
           </div>
         </div>
-        <div class="contact-panel panel panel-grid">
-          <p class="contact-email">Email: <a href="mailto:zixin.yin@connect.ust.hk">zixin.yin[at]connect.ust.hk</a></p>
+        <div class="contact-panel">
+          <p class="contact-kicker">Contact</p>
+          <div class="contact-rows">
+            <p class="contact-row">
+              <span>Email</span>
+              <a href="mailto:zixin.yin@connect.ust.hk">zixin.yin[at]connect.ust.hk</a>
+            </p>
+          </div>
           <nav class="hero-links" aria-label="External links">
             <a href="https://scholar.google.com/citations?user=bF7vffsAAAAJ&hl=en">Google Scholar</a>
             <a href="https://github.com/zxYin">Github</a>
@@ -89,13 +121,13 @@
     <main>
       <section class="section-head" id="publications" data-reveal>
         <div class="section-title-wrap">
+          <p class="section-kicker">Selected research</p>
           <h2>Publications</h2>
-          <p class="section-meta-note"><em>(* means equal contribution)</em></p>
         </div>
       </section>
 
       <section class="publication-list" aria-label="Publications">
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <video playsinline autoplay loop preload="metadata" muted>
               <source src="images/m4m.mp4" type="video/mp4">
@@ -110,7 +142,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <img src="images/reasonedit.jpg" alt="ReasonEdit preview" loading="lazy">
           </div>
@@ -126,7 +158,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <img src="images/colorctrl.png" alt="ColorCtrl preview" loading="lazy">
           </div>
@@ -144,7 +176,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <img src="images/lazydrag.jpg" alt="LazyDrag preview" loading="lazy">
           </div>
@@ -162,7 +194,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <video playsinline autoplay loop preload="metadata" muted>
               <source src="images/speakervid.mp4" type="video/mp4">
@@ -182,7 +214,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <img src="images/consistedit.jpg" alt="ConsistEdit preview" loading="lazy">
           </div>
@@ -200,7 +232,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <video playsinline autoplay loop preload="metadata" muted>
               <source src="images/m2m.mp4" type="video/mp4">
@@ -221,7 +253,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <video playsinline autoplay loop preload="metadata" muted>
               <source src="images/universe_1.mp4" type="video/mp4">
@@ -242,7 +274,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <video playsinline autoplay loop preload="metadata" muted>
               <source src="images/thpad.mp4" type="video/mp4">
@@ -250,7 +282,7 @@
           </div>
           <div class="publication-copy">
             <h3>Talking Head Generation with Probabilistic Audio-to-Visual Diffusion Priors</h3>
-            <p class="publication-authors">Zhentao Yu*, <strong>Zixin Yin*</strong>, Deyu Zhou*, Duomin Wang, Finn Wong, Baoyuan Wang</p>
+            <p class="publication-authors">Zhentao Yu, <strong>Zixin Yin (co-first)</strong>, Deyu Zhou, Duomin Wang, Finn Wong, Baoyuan Wang</p>
             <p class="publication-venue"><em>2023 IEEE International Conference on Computer Vision</em>, ICCV 2023,</p>
             <div class="publication-links">
               <a href="https://arxiv.org/abs/2212.04248">[PDF]</a>
@@ -261,7 +293,7 @@
           </div>
         </article>
 
-        <article class="publication-card panel" data-reveal>
+        <article class="publication-card" data-reveal>
           <div class="publication-media">
             <video playsinline autoplay loop preload="metadata" muted>
               <source src="images/pdfgc.mp4" type="video/mp4">
@@ -283,6 +315,17 @@
       </section>
 
     </main>
+
+    <section class="footer-bloom" id="page-end" aria-hidden="true">
+      <div class="footer-bloom-surface"></div>
+      <div class="footer-bloom-core"></div>
+      <div class="footer-bloom-halo footer-bloom-halo-a"></div>
+      <div class="footer-bloom-halo footer-bloom-halo-b"></div>
+      <div class="footer-bloom-ring footer-bloom-ring-a"></div>
+      <div class="footer-bloom-ring footer-bloom-ring-b"></div>
+      <div class="footer-bloom-beam footer-bloom-beam-a"></div>
+      <div class="footer-bloom-beam footer-bloom-beam-b"></div>
+    </section>
   </div>
 </body>
 </html>
