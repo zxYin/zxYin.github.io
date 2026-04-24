@@ -170,6 +170,54 @@
 
   initAmbientParticles();
 
+  var initMediaPlayback = function () {
+    var videos = document.querySelectorAll(".publication-media video");
+
+    if (!videos.length) {
+      return;
+    }
+
+    if (reducedMotion) {
+      videos.forEach(function (video) {
+        video.pause();
+        video.removeAttribute("autoplay");
+      });
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          var video = entry.target;
+
+          if (entry.isIntersecting) {
+            var playPromise = video.play();
+
+            if (playPromise && playPromise.catch) {
+              playPromise.catch(function () {});
+            }
+          } else {
+            video.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.18,
+        rootMargin: "160px 0px"
+      }
+    );
+
+    videos.forEach(function (video) {
+      observer.observe(video);
+    });
+  };
+
+  initMediaPlayback();
+
   if (reducedMotion || !("IntersectionObserver" in window)) {
     showAll();
     return;
@@ -187,13 +235,15 @@
         });
       },
       {
-        threshold: 0.14,
-        rootMargin: "0px 0px -8% 0px"
+        threshold: 0.16,
+        rootMargin: "0px 0px -10% 0px"
       }
     );
 
     revealItems.forEach(function (item, index) {
-      item.style.setProperty("--delay", Math.min(index * 90, 450) + "ms");
+      var delay = item.classList.contains("publication-card") ? 0 : Math.min(index * 90, 360);
+
+      item.style.setProperty("--delay", delay + "ms");
       observer.observe(item);
     });
 

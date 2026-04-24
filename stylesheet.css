@@ -241,9 +241,13 @@ main,
 
 html.reveal-ready [data-reveal] {
   transition:
-    opacity 700ms ease,
-    transform 700ms cubic-bezier(0.2, 0.75, 0.18, 1);
+    opacity 620ms ease,
+    transform 620ms cubic-bezier(0.2, 0.75, 0.18, 1);
   transition-delay: var(--delay, 0ms);
+}
+
+html.reveal-ready .publication-card[data-reveal] {
+  transition-duration: 620ms;
 }
 
 html.reveal-ready [data-reveal].is-settled {
@@ -252,7 +256,11 @@ html.reveal-ready [data-reveal].is-settled {
 
 html.reveal-ready [data-reveal]:not(.is-visible) {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(22px);
+}
+
+html.reveal-ready .publication-card[data-reveal]:not(.is-visible) {
+  transform: translateY(24px);
 }
 
 [data-reveal].is-visible {
@@ -361,7 +369,7 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
   display: grid;
   grid-template-columns: minmax(0, 1.56fr) minmax(240px, 0.5fr);
   gap: 30px;
-  align-items: start;
+  align-items: stretch;
   padding-top: 28px;
 }
 
@@ -507,32 +515,39 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
   color: var(--text-soft);
 }
 
+.bio-emphasis {
+  color: rgba(255, 231, 190, 0.96);
+  font-weight: 600;
+}
+
 .bio-stack a,
 .contact-row a {
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(228, 193, 140, 0.2);
+  color: rgba(255, 244, 223, 0.96);
+  text-decoration-line: underline;
+  text-decoration-color: rgba(228, 193, 140, 0.36);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
   transition:
     color 180ms ease,
-    border-color 180ms ease;
+    text-decoration-color 180ms ease;
 }
 
 .bio-stack a:hover,
 .bio-stack a:focus-visible,
 .contact-row a:hover,
 .contact-row a:focus-visible {
-  border-color: rgba(228, 193, 140, 0.54);
+  text-decoration-color: rgba(228, 193, 140, 0.68);
 }
 
 .hero-side {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   gap: 18px;
-  height: auto;
+  height: 100%;
   width: 100%;
   max-width: 360px;
   justify-self: end;
-  align-content: start;
+  align-content: stretch;
 }
 
 .portrait-panel {
@@ -581,6 +596,7 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
 
 .contact-panel {
   display: grid;
+  grid-template-rows: auto auto 1fr;
   gap: 16px;
   padding: 16px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -594,7 +610,7 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
 
 .contact-row {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-between;
   gap: 20px;
   margin: 0;
@@ -608,9 +624,10 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
 }
 
 .contact-row span {
-  color: var(--text-muted);
+  color: rgba(231, 235, 241, 0.58);
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.72rem;
+  line-height: 1.4;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   flex-shrink: 0;
@@ -620,6 +637,7 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
 .contact-row a {
   color: var(--text);
   font-weight: 500;
+  line-height: 1.4;
   text-align: right;
 }
 
@@ -628,6 +646,60 @@ html.reveal-ready [data-reveal]:not(.is-visible) {
   grid-template-columns: repeat(2, max-content);
   gap: 8px 32px;
   width: fit-content;
+}
+
+.role-panel {
+  display: grid;
+  align-self: end;
+  gap: 14px;
+  margin-top: 2px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.role-list {
+  display: grid;
+  gap: 10px;
+}
+
+.role-list p {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 12px;
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.role-list span {
+  color: var(--text-muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.role-list-compact p {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+}
+
+.role-list .role-company {
+  color: rgba(255, 244, 223, 0.94);
+  font-family: "Instrument Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.role-list .role-title {
+  color: rgba(231, 235, 241, 0.68);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .hero-links a,
@@ -799,16 +871,20 @@ html.reveal-ready .publication-card.is-settled {
     transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.publication-card:hover .publication-media {
+.publication-card:hover .publication-media,
+.publication-card:focus-within .publication-media {
   opacity: 0.98;
 }
 
 .publication-card:hover .publication-media img,
-.publication-card:hover .publication-media video {
+.publication-card:hover .publication-media video,
+.publication-card:focus-within .publication-media img,
+.publication-card:focus-within .publication-media video {
   filter: brightness(1.03);
 }
 
-.publication-card:hover .publication-copy h3 {
+.publication-card:hover .publication-copy h3,
+.publication-card:focus-within .publication-copy h3 {
   color: var(--accent-strong);
   transform: none;
 }
@@ -825,6 +901,12 @@ html.reveal-ready .publication-card.is-settled {
   font-size: 0.99rem;
 }
 
+.publication-authors strong {
+  color: rgba(255, 238, 208, 0.96);
+  font-weight: 700;
+  text-shadow: 0 0 16px rgba(228, 193, 140, 0.08);
+}
+
 .publication-venue {
   margin-top: 4px;
   color: var(--text-muted);
@@ -833,14 +915,14 @@ html.reveal-ready .publication-card.is-settled {
 .publication-badge {
   margin-top: 10px;
   align-self: flex-start;
-  padding: 0;
-  border: 0;
-  background: none;
+  width: fit-content;
+  padding-left: 9px;
+  border-left: 1px solid rgba(228, 193, 140, 0.48);
   color: var(--accent-strong);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.74rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
@@ -849,6 +931,17 @@ html.reveal-ready .publication-card.is-settled {
   flex-wrap: wrap;
   gap: 10px 14px;
   margin: 14px 0 12px;
+}
+
+.publication-links a {
+  color: rgba(255, 244, 223, 0.9);
+  border-color: rgba(228, 193, 140, 0.28);
+}
+
+.publication-links a:hover,
+.publication-links a:focus-visible {
+  color: var(--accent-strong);
+  border-color: rgba(228, 193, 140, 0.56);
 }
 
 .publication-abstract {
@@ -915,6 +1008,11 @@ strong {
   color: var(--text);
 }
 
+a:focus-visible {
+  outline: 1px solid rgba(228, 193, 140, 0.42);
+  outline-offset: 4px;
+}
+
 @keyframes ambientPulse {
   0% {
     transform: translate3d(0, 0, 0) scale(0.96);
@@ -951,8 +1049,17 @@ strong {
   }
 
   .hero-side {
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     height: auto;
+    align-content: start;
+  }
+
+  .contact-panel {
+    grid-template-rows: auto;
+  }
+
+  .role-panel {
+    align-self: start;
   }
 
   .portrait-panel {
