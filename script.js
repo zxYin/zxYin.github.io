@@ -185,7 +185,18 @@
       return;
     }
 
+    // Videos have no autoplay attribute so they don't all download on page load;
+    // they start (and fetch) only when scrolled near the viewport.
+    var playVideo = function (video) {
+      var playPromise = video.play();
+
+      if (playPromise && playPromise.catch) {
+        playPromise.catch(function () {});
+      }
+    };
+
     if (!("IntersectionObserver" in window)) {
+      videos.forEach(playVideo);
       return;
     }
 
@@ -195,11 +206,7 @@
           var video = entry.target;
 
           if (entry.isIntersecting) {
-            var playPromise = video.play();
-
-            if (playPromise && playPromise.catch) {
-              playPromise.catch(function () {});
-            }
+            playVideo(video);
           } else {
             video.pause();
           }
