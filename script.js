@@ -248,10 +248,23 @@
     );
 
     revealItems.forEach(function (item, index) {
-      var delay = item.classList.contains("publication-card") ? 0 : Math.min(index * 90, 360);
+      var belowFold = item.getBoundingClientRect().top > window.innerHeight;
+      var delay = item.classList.contains("publication-card") || belowFold ? 0 : Math.min(index * 90, 360);
 
       item.style.setProperty("--delay", delay + "ms");
       observer.observe(item);
+    });
+
+    // Keyboard focus can land on an item the observer hasn't revealed yet.
+    document.addEventListener("focusin", function (event) {
+      var item = event.target.closest && event.target.closest("[data-reveal]");
+
+      if (item && !item.classList.contains("is-visible")) {
+        item.style.setProperty("--delay", "0ms");
+        item.classList.add("is-visible");
+        settleRevealItem(item);
+        observer.unobserve(item);
+      }
     });
 
     var revealInView = function () {
