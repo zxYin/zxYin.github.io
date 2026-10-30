@@ -8,7 +8,7 @@
   --line-strong: rgba(255, 255, 255, 0.16);
   --text: #f5f7fa;
   --text-soft: rgba(231, 235, 241, 0.8);
-  --text-muted: rgba(183, 190, 202, 0.58);
+  --text-muted: rgba(183, 190, 202, 0.7);
   --accent: #e4c18c;
   --accent-strong: #f3d8ad;
   --accent-soft: rgba(228, 193, 140, 0.14);
@@ -472,27 +472,26 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
 
 .bio-emphasis {
   color: rgba(255, 231, 190, 0.96);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .stat {
   font-family: "Sora", "Instrument Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.32em;
+  font-weight: 600;
+  font-size: 1.16em;
   line-height: 1;
   letter-spacing: -0.01em;
   color: var(--accent-strong);
-  text-shadow: 0 0 22px rgba(228, 193, 140, 0.16);
 }
 
 .bio-stack a,
 .contact-row a,
 .resume-detail a {
-  color: rgba(255, 244, 223, 0.96);
+  color: rgba(240, 228, 208, 0.86);
   text-decoration-line: underline;
-  text-decoration-color: rgba(228, 193, 140, 0.36);
+  text-decoration-color: rgba(228, 193, 140, 0.3);
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
+  text-underline-offset: 0.24em;
   white-space: nowrap;
   transition:
     color 180ms ease,
@@ -538,7 +537,7 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
   width: 100%;
   height: auto;
   min-height: auto;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.045);
   border-radius: 3px;
@@ -559,7 +558,7 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 24%;
+  object-position: center 82%;
   filter: saturate(0.94) contrast(1.05);
 }
 
@@ -613,6 +612,7 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
 .hero-links {
   display: grid;
   grid-template-columns: repeat(2, max-content);
+  justify-items: start;
   gap: 8px 32px;
   width: fit-content;
 }
@@ -684,9 +684,10 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
 }
 
 .section-head h2 {
-  margin: 0;
+  margin: 0 0 0.29em;
   font-family: "Sora", "Instrument Sans", sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
   letter-spacing: -0.05em;
 }
 
@@ -706,7 +707,7 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
 
 .publication-list {
   display: block;
-  margin-top: 24px;
+  margin-top: 6px;
 }
 
 .publication-card {
@@ -733,7 +734,7 @@ html.reveal-ready .section-head[data-reveal]:not(.is-visible) {
 }
 
 .publication-card:first-child {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .publication-card:last-child {
@@ -847,10 +848,10 @@ html.reveal-ready .publication-card.is-settled {
   width: fit-content;
   padding-left: 9px;
   border-left: 1px solid rgba(228, 193, 140, 0.48);
-  color: var(--accent-strong);
+  color: var(--accent);
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
@@ -862,11 +863,14 @@ html.reveal-ready .publication-card.is-settled {
   margin: 14px 0 12px;
 }
 
+.hero-links a,
 .publication-links a {
   color: rgba(255, 244, 223, 0.9);
   border-color: rgba(228, 193, 140, 0.28);
 }
 
+.hero-links a:hover,
+.hero-links a:focus-visible,
 .publication-links a:hover,
 .publication-links a:focus-visible {
   color: var(--accent-strong);
@@ -935,7 +939,7 @@ html.reveal-ready .publication-card.is-settled {
 .resume-org h3 a {
   color: inherit;
   text-decoration-line: underline;
-  text-decoration-color: rgba(228, 193, 140, 0.36);
+  text-decoration-color: rgba(228, 193, 140, 0.3);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
   transition:
@@ -953,7 +957,7 @@ html.reveal-ready .publication-card.is-settled {
   margin: 0;
   color: rgba(231, 235, 241, 0.68);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1129,8 +1133,8 @@ a:focus-visible {
   }
 
   .publication-card {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 24px;
     padding: 22px 0;
   }
 }
@@ -1204,6 +1208,8 @@ a:focus-visible {
   }
 
   .publication-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
     padding: 20px 0;
   }
 
@@ -1254,7 +1260,6 @@ a:focus-visible {
   }
 
   .topbar-nav,
-  .hero-links,
   .publication-links {
     gap: 8px;
   }
